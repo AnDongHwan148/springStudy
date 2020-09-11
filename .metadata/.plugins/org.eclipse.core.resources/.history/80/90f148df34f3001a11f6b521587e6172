@@ -1,0 +1,19 @@
+package com.spring.example;
+
+import java.util.Locale;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class BoardController {
+
+	private static final Logger looger = LoggerFactory.getLogger(BoardController.class);
+	
+	@RequestMapping(value = "/board/free", method = RequestMethod.GET)
+	public String freeBoard(Locale locale, Model model) {
+		
+	}
+	
+}

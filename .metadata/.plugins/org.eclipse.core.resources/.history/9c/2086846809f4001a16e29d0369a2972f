@@ -1,0 +1,6 @@
+package com.spring.example.dao;
+
+@Repository("BoardDao")
+public class BoardDaoImpl {
+
+}

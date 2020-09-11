@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자유 게시판 작성</title>
+</head>
+<style>
+	#title {
+		width: 200px;	
+	}
+	#submit_btn {
+		float: right;
+		margin-top: 10px;
+	}
+	#submit_btn_div {
+		height: 20px;	
+	}
+</style>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<h1>자유 게시판 작성</h1>
+	<form>
+		<table id="writeBoard_table" border="1">
+			<tr>
+				<td>제목</td>
+				<td><input id="title" type="text"></td>
+			</tr>
+			<tr>
+				<td>내용</td>
+				<td><textarea id="textarea" rows="20" cols="20" style="resize: none"></textarea></td>
+			</tr>
+		</table>
+		<div id="submit_btn_div"><input type="submit" id="submit_btn" value="작성"></div>
+	</form>
+	<script type="text/javascript">
+		// textarea 길이를 제목 text와 동일하게 마추기 위함
+		var writeBoard_width = $('#title').width();
+		$('#textarea').width(writeBoard_width);
+		// button 위치를 테이블 위치와 동일하게 마추기 위함		
+		var writeBoard_table_width = $('#writeBoard_table').width();
+		$('#submit_btn_div').width(writeBoard_table_width);
+	</script>
+</body>
+</html>

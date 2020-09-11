@@ -1,0 +1,7 @@
+package com.spring.example.DTO;
+
+public class submitFreeBoard {
+
+	private String title;
+	private String textarea;
+}

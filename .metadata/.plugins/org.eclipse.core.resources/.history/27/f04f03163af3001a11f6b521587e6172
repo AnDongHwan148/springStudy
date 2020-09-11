@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자유 게시판</title>
+</head>
+<style>
+	#No {
+		width: 50px;	
+	}
+	#title {
+		width: 200px;
+	}
+	#writer {
+		width: 100px;
+	}
+	#createDate {
+		width: 100px;
+	}
+	#noData {
+		height: 150px;
+		text-align: center;
+	}
+	#write {
+		margin-right: auto;
+	}
+</style>
+<body>
+	<h1>자유 게시판</h1>
+	<table border="1">
+		<tr>
+			<th id="No">번호</th>
+			<th id="title">제목</th>
+			<th id="writer">작성자</th>
+			<th id="createDate">작성일</th>
+		</tr>
+		<tr>
+			<td colspan="4" id="noData">작성된 게시판이 없습니다.</td>
+		</tr>
+	</table>
+	<div>
+		<button id="write">작성</button>	
+	</div>
+	
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

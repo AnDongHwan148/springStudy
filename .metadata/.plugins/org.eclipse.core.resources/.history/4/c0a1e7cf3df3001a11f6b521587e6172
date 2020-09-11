@@ -1,0 +1,31 @@
+package com.spring.example;
+
+import java.util.Locale;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+public class BoardController {
+
+	private static final Logger looger = LoggerFactory.getLogger(BoardController.class);
+	
+	@RequestMapping(value = "/board/free", method = RequestMethod.GET)
+	public String freeBoard(Locale locale, Model model) {
+		looger.info("free Board The client locale is {}.", locale);
+		
+		return "Board/freeBoard";
+	}
+	
+	@RequestMapping(value = "/board/wirteFreeBoard", method = RequestMethod.GET)
+	public String wirteFreeBoard(Locale locale, Model model) {
+		looger.info("Write free Board The Client locale is {}.", locale);
+		
+		return "Board/wirteFreeBoard";
+	}
+	 
+}
